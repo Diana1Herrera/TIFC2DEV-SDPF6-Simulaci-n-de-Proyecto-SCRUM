@@ -1,6 +1,29 @@
 body{
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
 }
+
+header {
+    background-color: #ff6f61;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+ 
+h1 {
+    margin: 0;
+}
+ 
+main {
+    padding-top: 70px;
+    padding: 2rem;
+    min-height: 500px;
+}
+
 .contenedor-barra-navegacion {
     background-color: #ff6f61;
     color: white;
@@ -52,6 +75,51 @@ a:focus { text-decoration: none;}
     align-items: center;
 }
 
-main{
-    min-height: 500px;
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+ul{
+    list-style:none;
+}
+ 
+/* Recipe styles */
+.recipe {
+    display: flex;
+    gap: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+ 
+.recipe-image img {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+}
+.recipe-image img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño un 10% */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra más prominente */
+}
+ 
+.recipe-text {
+    padding: 1rem;
+    flex: 1;
+}
+ 
+.recipe-text h2 {
+    margin-top: 0;
+    color: #ff6f61;
+}
+ 
+.recipe-text p {
+    margin: 1rem 0;
 }
