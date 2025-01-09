@@ -12,6 +12,9 @@ body{
     align-content: center;
     position: fixed;
 }
+#colorLetra{
+    color: #ff6f61;
+}
 
 a { 
     text-decoration: none; 
